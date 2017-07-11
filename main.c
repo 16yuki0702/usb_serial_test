@@ -21,11 +21,11 @@ main(int argc, char *argv[])
 	char *dfile = argv[1];
 	unsigned char *c = argv[2];
 
-	int USB = open(dfile, O_RDWR| O_NOCTTY);
+	int USB = open(dfile, O_RDWR | O_NOCTTY);
 
 	struct termios tty;
 	struct termios tty_old;
-	memset(&tty, 0, sizeof tty);
+	memset(&tty, 0, sizeof(tty));
 
 	if (tcgetattr(USB, &tty) != 0) {
 		printf("error 1\n");
