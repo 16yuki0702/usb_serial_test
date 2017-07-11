@@ -6,7 +6,7 @@
 #include <errno.h>
 #include <termios.h>
 
-#define TERM	    "\r"
+#define TERM		"\r"
 #define TERM_CODE	'\r'
 
 int
